@@ -3,14 +3,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;
   background-color: #00a087;
   font-color: #e8fdff;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 4em;
   line-height: 80px;
-  position: relative;
+  position: absolute;
   font-style: oblique
 }
 

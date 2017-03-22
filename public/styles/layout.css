@@ -32,5 +32,41 @@ main {
   height: 450px;
   margin: auto;
   padding-top: 80px;
-   margin-top: 100px;
+  margin-top: 100px;
 }
+
+section.all-tweets{
+  border: solid gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+}
+
+
+section.all-tweets header {
+  background-color: #f3f3f3;
+
+}
+section.all-tweets p{
+  width: 100%;
+
+}
+
+section.all-tweets footer {
+  border-top: 1px solid black;
+  padding:8px;
+}
+
+section.all-tweets article {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+/*.all-tweets {
+  border-color: #eee #ddd #bbb;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+}*/
+
+/*style="box-sizing: 100%;width: 432px;height: 83px;border-bottom: 1px solid lightgray;margin: 5px;"*/

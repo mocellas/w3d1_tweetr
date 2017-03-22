@@ -1,0 +1,36 @@
+.underline-head{
+  border-bottom: 3px solid #0c0c0c;
+
+}
+.main{
+    width: 445px;
+    line-height: normal;
+    font-size: 16px;
+    transition: none;
+    background: white !important;
+    overflow: hidden;
+    padding-right: 2em;
+    padding-left: 2em;
+}
+.counter{
+  float: right;
+}
+
+.new-tweet textarea {
+  width: 100%;
+  height: 100px;
+}
+.new-tweet {
+  border: solid gray;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+  margin-bottom: 20px;
+}
+
+.header textarea {
+    width: 100%;
+    height: 200%;
+}
+
+
