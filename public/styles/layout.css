@@ -48,8 +48,10 @@ section.all-tweets header {
   background-color: #f3f3f3;
 
 }
-section.all-tweets p{
+section.all-tweets div{
   width: 100%;
+  background-color: white;
+  height: 60px;
 
 }
 
