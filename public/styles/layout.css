@@ -58,7 +58,14 @@ section.all-tweets div{
 section.all-tweets footer {
   border-top: 1px solid black;
   padding:8px;
+  background-color: #f3f3f3;
+
+
 }
+section.all-tweets p{
+    margin: 0;
+    padding-right: 2px;
+  }
 
 section.all-tweets article {
   border: 1px solid black;
