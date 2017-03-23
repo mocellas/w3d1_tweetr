@@ -54,7 +54,6 @@ section.all-tweets div{
   height: 60px;
 
 }
-
 section.all-tweets footer {
   border-top: 1px solid black;
   padding:8px;
@@ -71,11 +70,12 @@ section.all-tweets article {
   border: 1px solid black;
   border-radius: 10px;
 }
-/*.all-tweets {
-  border-color: #eee #ddd #bbb;
-  border-radius: 5px;
-  border-style: solid;
-  border-width: 1px;
+
+section.all-tweets.footer.div {
+    padding-left: 0px;
+    width: 105px;
+    height: 20px;
+    background-color: #f3f3f3;
 }*/
 
 /*style="box-sizing: 100%;width: 432px;height: 83px;border-bottom: 1px solid lightgray;margin: 5px;"*/
