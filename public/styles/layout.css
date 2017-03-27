@@ -36,46 +36,62 @@ main {
 }
 
 section.all-tweets{
-  border: solid gray;
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #f3f3f3;
   margin-bottom: 20px;
 }
 
-
-section.all-tweets header {
-  background-color: #f3f3f3;
-
-}
-section.all-tweets div{
-  width: 100%;
-  background-color: white;
-  height: 60px;
-
-}
-section.all-tweets footer {
-  border-top: 1px solid black;
-  padding:8px;
-  background-color: #f3f3f3;
-
-
-}
-section.all-tweets p{
-    margin: 0;
-    padding-right: 2px;
-  }
-
 section.all-tweets article {
   border: 1px solid black;
   border-radius: 10px;
 }
+section.all-tweets header {
+  background-color: #f3f3f3;
+  padding: 20px;
+}
 
-section.all-tweets.footer.div {
-    padding-left: 0px;
-    width: 105px;
-    height: 20px;
-    background-color: #f3f3f3;
-}*/
+section.all-tweets img{
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  float: left;
+
+}
+
+section.all-tweets h2{
+  padding-bottom: 1px;
+  padding-left: 1em;
+  box-sizing: content-box;
+  float: left;
+
+}
+section.all-tweets div{
+  width: 100%;
+  background-color: #f3f3f3;
+  height: 60px;
+}
+section.all-tweets p{
+    margin: 0;
+    padding-right: 2px;
+    height: 61px;
+    background-color: white
+  }
+
+section.all-tweets footer {
+  border-top: 1px solid black;
+  padding:8px;
+  background-color: #f3f3f3;
+}
+section.all-tweets span{
+  padding-left: 0px;
+  width: 105px;
+  height: 20px;
+  background-color: #f3f3f3;
+  float: right;
+}
+
+
+*/
 
 /*style="box-sizing: 100%;width: 432px;height: 83px;border-bottom: 1px solid lightgray;margin: 5px;"*/

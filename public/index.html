@@ -8,15 +8,20 @@
     <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- App CSS -->
-    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
-    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/nav.css" type="text/css"/>
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
     <!--add new-tweet style sheet-->
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.0/additional-methods.min.js"></script>
+
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
@@ -27,44 +32,90 @@
 
     <!-- Top nav bar (fixed) -->
     <nav id="nav-bar" class="fixed-nav-bar">
-    <img class="logo" src="/images/bird.png" width="80px" height="80px">
-
-
+      <img class="logo" src="/images/bird.png" width="80px" height="80px">
       <span class="header">Tweeter</span>
+      <button style="font-size:36px">Compose <i class="fa fa-twitter"></i></button>
     </nav>
 
     <!-- Page-specific (main) content here -->
     <main id="layout" class="main">
       <section class="new-tweet">
         <h2 class="underline-head"> Compose Tweet</h2>
-        <form action="/tweets/" method="POST">
-            <textarea name="text" placeholder="What are you humming about?"></textarea>
+        <form action="/tweets/" method="POST" id="tweet-box">
+            <textarea id="tweet-text" name="text" placeholder="What are you humming about?"></textarea>
             <input type="submit" value="Tweet">
             <span class="counter">140</span>
+
           </form>
+      </section>
+      <section>
+        <!-- test area -->
+        <p id="test"></p>
+        <p id="test2">Fernando</p>
       </section>
 
       <!--New Tweets article-->
       <section id="new-tweets" class="all-tweets">
         <article>
           <header>
-            <img src="/images/Ernest.png"  width="60px" height="60px" border-style="solid"> Ernest
-          </header>
-          <content>
+            <img src="/images/Ernest.png">
+            <h2>My_User_Alias</h2>
             <div>
-              <p>Test content inside of the content, over the footer above the head.
-            </div>
-          </content>
-          <footer>
-              <div>
-                <p> 10 days ago...
+              <span>@User name to the right on header</span>
               </div>
+          </header>
+            <div>
+            <script>
+                //
+                function showTweets() {
+                var str = $( "all-tweets" ).serialize();
+                $( "#all-tweets" ).text( str );
+                }
+                showTweets();
+                //
+    </script>
+              <p>
+            </div>
+          <footer>
+          <small></small>
+          <span></span>
               <i class="fa fa-retweet" aria-hidden="true"></i>
               <i class="fa fa-heart" aria-hidden="true"></i>
               <i class="fa fa-flag" aria-hidden="true"></i>
             </footer>
         </article>
+        <p>
       </section>
     </main>
+    <script>
+    $(document).ready(function () {
+      console.log('Document ready...');
+      $('#tweet-box').on('submit', function (e) {
+        e.preventDefault();
+        console.log('Form submitted');
+
+        // example
+        $('#test').text('Hello world!');
+        var exampleText = $('#test2').text(); // Fernando
+        if (exampleText === "") {
+          alert("Empty field...type something");
+        }
+
+
+        // 1) console log user's typed message on submit
+        function userTweets $('#tweet-text').val();
+          if (tweet-text === null) {
+            console.log("First if", userTweets);
+          } if (tweet-text === ()) {
+            console.log("Second If", usertTweets);
+          } else (tweet-text < composer-char-counter)
+            console.log("First else", userTweets)
+        // 2) add some validation on what the user typed
+        //     - not null
+        //     - not "" or not 0 characters
+        //     - under 140 characters
+      });
+    })
+    </script>
   </body>
 </html>
